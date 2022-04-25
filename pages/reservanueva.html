@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Salud</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/jpg" href="../assets/cruz 2.png"/>
+</head>
+<body>
+    <!-- header replicado en todas las paginas -->
+    <header class="header">
+        <h1 class="headerH1">Consultorio Medico</h1>
+        <h3 class="headerH3">Paciente 1</h3>
+    </header>
+    <main class="main-1">
+        <nav class="mainNav-1">
+            <ul class="mainNavUl-1">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="misreservas.html">Mis Reservas</a></li>
+                <li><a href="reservanueva.html">Reserva Nueva</a></li>
+                <li><a class="negro" href="reservasanteriores.html">Rerservas Anteriores</a></li>
+                <li><a class="negro" href="soporte.html">Soporte</a></li>
+            </ul>                  
+        </nav>
+        <article class="mis-reservas">
+            <h2>Rerserva nueva</h2>
+            <form>
+                <fieldset>
+                    <label for="nombre_apellido">Nombre</label>
+                    <input type="text" name="nombre" placeholder="escriba aqui su nombre">
+                    <label for="nombre_apellido">Apellido</label>
+                    <input type="text" name="apellido" placeholder="escriba aqui su apellido">
+                    <label for="mail">Mail</label>
+                    <input type="text" name="mail" placeholder="escriba aqui su mail">
+                    <label for="fecha">Fecha</label>
+                    <input type="fecha" name="fecha" placeholder="escriba aqui la fecha">
+                    <select name="medico">
+                        <option value="seleccionar">seleccionar medico</option>
+                        <option value="medico1">Medico 1</option>
+                        <option value="medico2">Medico 2</option>
+                        <option value="medico3">Medico 3</option>
+                    </select>
+                    <div>¿Cual es el motivo de su nueva reserva?</div>
+                        <textarea name="text" cols="100" rows="10" placeholder="escriba aqui el motivo"></textarea>
+                    <div>
+                    <input type="submit" value="Realizar la reserva">
+                </fieldset>
+            </form>
+        </article>
+    </main>
+    <footer>
+        <p>Direccion 123 - Numero de telefono: 381-3456678 - Maildecontacto@gmail.com</p>
+    </footer>
+    
+</body>
+</html>

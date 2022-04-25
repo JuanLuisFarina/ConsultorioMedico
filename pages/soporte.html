@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Salud</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/jpg" href="../assets/cruz 2.png"/>
+</head>
+<body>
+    <header class="header">
+        <h1 class="headerH1">Consultorio Medico</h1>
+        <h3 class="headerH3">Paciente 1</h3>
+    </header>
+    <main class="main">
+        <nav class="mainNav">
+            <ul class="mainNavUl">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="misreservas.html">Mis Reservas</a></li>
+                <li><a href="reservanueva.html">Reserva Nueva</a></li>
+                <li><a href="reservasanteriores.html">Rerservas Anteriores</a></li>
+                <li><a href="soporte.html">Soporte</a></li>
+            </ul>                  
+        </nav>
+        <article>
+            <!-- aclaracion para que la gente le preste atencion al footer -->
+            <strong>¡Importante!</strong>
+            <!-- enlace incluido con direccion al footer -->
+            <p>Utilize este medio solo en caso de no poder comunicarse via telefonica o mail <a class="soporte" href="#footer">(ubicados en el pie de pagina)</a>, ya que el tiempo de respuesta es de 24 a 48 horas habiles.</p>
+            <form>
+                <!-- la idea es que aparte de los datos de contacto del footer, el cliente cuente con la posibilidad de hacer un reclamo/consulta mediante la pagina -->
+                <fieldset>
+                    <label for="nombre_apellido"> Nombre</label>
+                    <input type="text" name="nombre" placeholder="escriba aqui su nombre">
+                    <label for="nombre_apellido">Apellido</label>
+                    <input type="text" name="apellido" placeholder="escriba aqui su apellido">
+                    <label for="mail">Mail</label>
+                    <input type="text" name="mail" placeholder="escriba aqui su mail">
+                    </select>
+                    <div>¿En que podemos ayudarlo?</div>
+                        <textarea name="text" cols="150" rows="10" placeholder="escriba aqui su consulta"></textarea>
+                    <div>
+                    <input type="submit" value="Enviar consulta">
+                </fieldset>
+            </form>
+        </article>
+    </main>
+    <footer id="footer">
+        <p>Direccion 123 - Numero de telefono: 381-3456678 - Maildecontacto@gmail.com</p>
+    </footer>
+    
+</body>
+</html>
