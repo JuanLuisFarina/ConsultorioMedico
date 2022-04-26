@@ -81,6 +81,7 @@ a:hover{
     justify-content: space-around;
     height: 200px;
 }
+
 img{
     animation-name: animacion;
     animation-duration: 2s;
@@ -112,6 +113,10 @@ img{
 }
 .soporte{
     font-weight: 900;
+    color: black;
+}
+.soporte:hover{
+    color: gray;
 }
 a{
     text-decoration: none;
