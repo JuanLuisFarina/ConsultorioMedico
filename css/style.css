@@ -64,7 +64,9 @@
     ;
     margin-bottom: 150px;
 }
-
+a:hover{
+    font-weight: 900;
+}
 .mainNav-1{
     grid-area: mainNav-1;
     text-align: left;
@@ -78,6 +80,23 @@
     flex-direction: column;
     justify-content: space-around;
     height: 200px;
+}
+img{
+    animation-name: animacion;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+@keyframes animacion {
+    33%{
+        transform: rotate(15deg);
+    }
+    66%{
+        transform: rotate(-15deg);
+    }
+    100%{
+        transform: none;
+    }
 }
 .mis-reservas{
     grid-area: mis-reservas;
