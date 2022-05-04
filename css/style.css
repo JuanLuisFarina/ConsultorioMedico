@@ -50,38 +50,9 @@
     justify-content: space-around;
     height: 200px;
 }
-    /* clase solo para "reservas*/
-.main-1{
-    padding-top: 131px;
-    display: flex;
-    display: grid;
-    grid-template-columns: repeat(5, 20%);
-    grid-template-rows: repeat(3, 33%);
-    grid-template-areas: 
-    "mainNav-1 mis-reservas mis-reservas mis-reservas mis-reservas"
-    "mainNav-1 mis-reservas mis-reservas mis-reservas mis-reservas"
-    "mainNav-1 mis-reservas mis-reservas mis-reservas mis-reservas"
-    ;
-    margin-bottom: 150px;
-}
 a:hover{
     font-weight: 900;
 }
-.mainNav-1{
-    grid-area: mainNav-1;
-    text-align: left;
-    background-image: linear-gradient(to bottom, #03045E, #023E8A, #0077B6, #0096C7, #00B4D8, #48CAE4, #90E0EF, #ADE8F4, #CAF0F8, white);
-    text-align: center;
-    position: fixed;
-    height: 70%;
-}
-.mainNavUl-1{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 200px;
-}
-
 img{
     animation-name: animacion;
     animation-duration: 2s;
@@ -99,9 +70,6 @@ img{
         transform: none;
     }
 }
-.mis-reservas{
-    grid-area: mis-reservas;
-}
 .medico1{
     grid-area: medico1;
 }
@@ -110,13 +78,6 @@ img{
 }
 .medico3{
     grid-area: medico3;
-}
-.soporte{
-    font-weight: 900;
-    color: black;
-}
-.soporte:hover{
-    color: gray;
 }
 a{
     text-decoration: none;
@@ -129,18 +90,6 @@ article{
 }
 img{
     height: 150px;
-}
-table{
-    /* margin: 0 auto; para colocar la tabla al medio */
-    margin: 0 auto;
-    background-color: #CAF0F8;
-    border-collapse: collapse;
-    height: 300px;
-    width: 500px;
-}
-form{
-    background-color: #CAF0F8;
-    margin-bottom: 50px;
 }
 footer{
     text-align: center;

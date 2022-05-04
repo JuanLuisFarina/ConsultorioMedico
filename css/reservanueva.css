@@ -48,6 +48,7 @@
     flex-direction: column;
     justify-content: space-around;
     height: 200px;
+    list-style: none;
 }
 a{
     text-decoration: none;
@@ -56,6 +57,7 @@ a{
 }
 a:hover{
     font-weight: 900;
+    color: white;
 }
 article{
     text-align: center;
