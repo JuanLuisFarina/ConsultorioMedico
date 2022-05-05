@@ -1,0 +1,104 @@
+@import "partials/header";
+@import "partials/main";
+@import "partials/footer";
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Grotesk', sans-serif;;
+}
+@media screen and (max-width: 1200px){
+
+    .headerH1{
+        margin-top: 30px;
+    }
+    .headerH3{
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 1023px){
+    .header{
+        padding-bottom: 20px;
+    }
+}
+@media screen and (max-width: 768px){
+    .header{
+        padding-bottom: 40px;
+    }
+}
+@media screen and (max-width: 480px){
+    .header{
+        padding-bottom: 55px;
+    }
+    .main{
+        margin-bottom: 75px;
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: repeat(4, 25%);
+        grid-template-areas: 
+        "mainNav"
+        "medico1"
+        "medico2"
+        "medico3"
+        ;
+    }
+    .main-1{
+        margin-bottom: 75px;
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: repeat(4, 25%);
+        grid-template-areas: 
+        "mainNav-1"
+        "mis-reservas"
+        "mis-reservas"
+        "mis-reservas"
+        ;
+    }
+    .mainNav{
+        grid-area: mainNav;
+        width: 100%;
+        height: 25%;
+    }
+    .mainNav-1{
+            grid-area: mainNav;
+            width: 100%;
+            height: 25%;
+    }
+    .mainNavUl{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .mainNavUl-1{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+    }
+    li{
+        list-style: none;
+    }
+    .negro{
+        color: black;
+    }    
+    .mis-reservas{
+        margin-top: 100px;
+        grid-column-start: mis-reservas;
+        grid-area: mis-reservas;
+    }
+    .medico1{
+        grid-area: medico1;
+    }
+    .medico2{
+        grid-area: medico2;
+    }
+    .medico3{
+        grid-area: medico3;
+    }
+    table{
+        height: 150px;
+        width: 250px;
+    }
+}

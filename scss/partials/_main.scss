@@ -1,0 +1,67 @@
+main{
+    /* para evitar que se sobreponga el header y el nav */
+    padding-top: 131px;
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(3, 33%);
+    grid-template-areas: 
+    "mainNav medico1 medico1 medico1 medico1"
+    "mainNav medico2 medico2 medico2 medico2"
+    "mainNav medico3 medico3 medico3 medico3"
+    ;
+    nav{
+        grid-area: mainNav;
+        text-align: left;
+        background-image: linear-gradient(to bottom, #03045E, #023E8A, #0077B6, #0096C7, #00B4D8, #48CAE4, #90E0EF, #ADE8F4, #CAF0F8, white);
+        text-align: center;
+        position: fixed;
+        height: 70%;
+        ul{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 200px;
+            a{
+                text-decoration: none;
+                color: white;
+                margin: 10px;
+            }
+            a:hover{
+                font-weight: 900;
+            }
+        }
+    }
+    article {
+        text-align: center;
+        margin: 50px;
+        img{
+            animation-name: animacion;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-delay: 3s;
+            height: 150px;
+        }
+    }
+    
+}
+.medico1{
+    grid-area: medico1;
+}
+.medico2{
+    grid-area: medico2;
+}
+.medico3{
+    grid-area: medico3;
+}
+@keyframes animacion {
+    33%{
+        transform: rotate(15deg);
+    }
+    66%{
+        transform: rotate(-15deg);
+    }
+    100%{
+        transform: none;
+    }
+}
