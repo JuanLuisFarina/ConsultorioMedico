@@ -36,7 +36,6 @@ main{
         text-align: center;
         margin: 50px;
         img{
-            animation-name: animacion;
             animation-duration: 2s;
             animation-iteration-count: infinite;
             animation-delay: 3s;
@@ -53,15 +52,4 @@ main{
 }
 .medico3{
     grid-area: medico3;
-}
-@keyframes animacion {
-    33%{
-        transform: rotate(15deg);
-    }
-    66%{
-        transform: rotate(-15deg);
-    }
-    100%{
-        transform: none;
-    }
 }
