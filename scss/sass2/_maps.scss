@@ -1,0 +1,16 @@
+@import "../variables/variables";
+
+$conjunto:(
+    color: $colordefondo,
+    posicion: $fijado,
+    fuente: $fuente,
+    alineado: $alineado,
+
+);
+main{
+    nav{
+    background-image: map-get($conjunto, color);
+    position: map-get($conjunto, posicion);
+    text-align: map-get($conjunto, alineado);
+}
+}

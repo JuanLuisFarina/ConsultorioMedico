@@ -1,5 +1,6 @@
+@import "../sass2/extend";
 footer{
-    text-align: center;
+    @extend .article-footer;
     margin: 25px;
     background-color: #03045E;
     border: solid 3px black;

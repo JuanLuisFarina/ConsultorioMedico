@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap");
+.article-footer, main article, footer {
+  text-align: center; }
+
+main nav {
+  background-image: linear-gradient(to bottom, #03045E, #023E8A, #0077B6, #0096C7, #00B4D8, #48CAE4, #90E0EF, #ADE8F4, #CAF0F8, white);
+  position: fixed;
+  text-align: center; }
+
 header {
   display: flex;
   flex-direction: row;
@@ -15,6 +23,9 @@ header {
   header h3 {
     margin: 10px; }
 
+.article-footer, main article, footer {
+  text-align: center; }
+
 main {
   /* para evitar que se sobreponga el header y el nav */
   padding-top: 131px;
@@ -25,10 +36,6 @@ main {
   grid-template-areas: "mainNav medico1 medico1 medico1 medico1" "mainNav medico2 medico2 medico2 medico2" "mainNav medico3 medico3 medico3 medico3"; }
   main nav {
     grid-area: mainNav;
-    text-align: left;
-    background-image: linear-gradient(to bottom, #03045E, #023E8A, #0077B6, #0096C7, #00B4D8, #48CAE4, #90E0EF, #ADE8F4, #CAF0F8, white);
-    text-align: center;
-    position: fixed;
     height: 70%; }
     main nav ul {
       display: flex;
@@ -42,12 +49,8 @@ main {
       main nav ul a:hover {
         font-weight: 900; }
   main article {
-    text-align: center;
     margin: 50px; }
     main article img {
-      animation-duration: 2s;
-      animation-iteration-count: infinite;
-      animation-delay: 3s;
       height: 150px; }
 
 .medico1 {
@@ -59,8 +62,10 @@ main {
 .medico3 {
   grid-area: medico3; }
 
+.article-footer, main article, footer {
+  text-align: center; }
+
 footer {
-  text-align: center;
   margin: 25px;
   background-color: #03045E;
   border: solid 3px black;
