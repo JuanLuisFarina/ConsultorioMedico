@@ -27,10 +27,26 @@ main{
             }
             a:hover{
                 font-weight: 900;
+                color: white;
+            }
+            li{
+                list-style: none;
             }
         }
     }
     article {
+        table{
+            /* margin: 0 auto; para colocar la tabla al medio */
+            margin: 0 auto;
+            background-color: #CAF0F8;
+            border-collapse: collapse;
+            height: 300px;
+            width: 500px;
+        }
+        form{
+            background-color: #CAF0F8;
+            margin-bottom: 50px;
+        }
         @extend .article-footer;
         margin: 50px;
         img{
@@ -38,6 +54,26 @@ main{
         }
     }
     
+}
+.main-1{
+    padding-top: 131px;
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(3, 33%);
+    grid-template-areas: 
+    "mainNav-1 mis-reservas mis-reservas mis-reservas mis-reservas"
+    "mainNav-1 mis-reservas mis-reservas mis-reservas mis-reservas"
+    "mainNav-1 mis-reservas mis-reservas mis-reservas mis-reservas"
+    ;
+    margin-bottom: 150px;
+}
+.soporte{
+    font-weight: 900;
+    color: black;
+}
+.soporte:hover{
+    color: gray;
 }
 .medico1{
     grid-area: medico1;
@@ -47,4 +83,7 @@ main{
 }
 .medico3{
     grid-area: medico3;
+}
+.mis-reservas{
+    grid-area: mis-reservas;
 }
