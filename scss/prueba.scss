@@ -88,9 +88,10 @@
     li{
         list-style: none;
     }
-    .negro{
-        color: black;
-    }    
+    table{
+        height: 150px;
+        width: 250px;
+    }   
     .mis-reservas{
         margin-top: 100px;
         grid-column-start: mis-reservas;
@@ -104,9 +105,5 @@
     }
     .medico3{
         grid-area: medico3;
-    }
-    table{
-        height: 150px;
-        width: 250px;
     }
 }
