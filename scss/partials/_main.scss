@@ -15,6 +15,7 @@ main{
     nav{
         grid-area: mainNav;
         height: 70%;
+        width: 14%;
         ul{
             display: flex;
             flex-direction: column;
@@ -31,10 +32,14 @@ main{
             }
             li{
                 list-style: none;
+                margin-right: 25px;
             }
         }
     }
     article {
+        h3{
+            margin: 25px;
+        }
         table{
             /* margin: 0 auto; para colocar la tabla al medio */
             margin: 0 auto;
