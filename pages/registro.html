@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Inicia sesión</title>
+    <meta name="description" content="Registrate en 'consultorio medico' y recibi informacion personalizada">
+    <meta name="keywords" content="salud, medico, cuidados, turno, hospital, clinica, doctor, estado fisico, lesion, herida, consulta, cirugia">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/jpg" href="../assets/cruz 2.png"/>
+</head>
+<body>
+    <header class="header">
+        <h1 class="headerH1">Consultorio Medico</h1>
+        <h3 class="headerH3">Perfil</h3>
+    </header>
+    <main class="main-1">
+        <nav class="mainNav-1">
+            <ul class="mainNavUl-1">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="misreservas.html">Mis Reservas</a></li>
+                <li><a href="reservanueva.html">Reserva Nueva</a></li>
+                <li><a href="reservasanteriores.html">Reservas Previas</a></li>
+                <li><a href="soporte.html">Soporte</a></li>
+            </ul>                  
+        </nav>
+        <section class="mis-reservas">
+            <article>
+                <h3>Inicia sesión</h3>
+                <form class="row g-3">
+                    <div class="col-auto">
+                        <label for="staticEmail2" class="visually-hidden">Email</label>
+                        <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="Ingrese su DNI:">
+                        
+                    </div>
+                    <div class="col-auto">
+                        <label for="inputPassword2" class="visually-hidden">DNI</label>
+                        <input type="password" class="form-control" id="inputPassword2" placeholder="DNI">
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-primary mb-3">Confirmar identidad</button>
+                    </div>
+                    </form>
+            </article>
+            <article>
+                <h3> O registrate:</h3>
+                <form class="row g-3 needs-validation" novalidate>
+                    <div class="col-md-4">
+                        <label for="validationCustom01" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="validationCustom01" value="" required>
+                        <div class="valid-feedback">
+                        Valido!
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationCustom02" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" id="validationCustom02" value="" required>
+                        <div class="valid-feedback">
+                        Valido!
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationCustomUsername" class="form-label">Usuario</label>
+                        <div class="input-group has-validation">
+                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                        <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                        <div class="invalid-feedback">
+                            Coloque un nombre de usuario.
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="validationCustom03" class="form-label">Correo Electronico</label>
+                        <input type="text" class="form-control" id="validationCustom03" required>
+                        <div class="invalid-feedback">
+                        Coloque un correo valido.
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="validationCustom04" class="form-label">Sucursal</label>
+                        <select class="form-select" id="validationCustom04" required>
+                        <option selected disabled value="">...</option>
+                        <option>Yerba Buena</option>
+                        <option>Centro</option>
+                        </select>
+                        <div class="invalid-feedback">
+                        Elija una sucursal.
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="validationCustom05" class="form-label">DNI</label>
+                        <input type="text" class="form-control" id="validationCustom05" required>
+                        <div class="invalid-feedback">
+                        Coloque su DNI.
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                            Acepta terminos y condiciones
+                        </label>
+                        <div class="invalid-feedback">
+                            DEbe aceptar los terminos y condiciones antes de continuar.
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-primary" type="submit">Enviar</button>
+                    </div>
+                    </form>
+            </article>
+        </section>
+    </main>
+    <footer id="footer">
+        <p>Direccion 123 - Numero de telefono: 381-3456678 - Maildecontacto@gmail.com</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
